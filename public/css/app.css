@@ -55,11 +55,11 @@ body {
   background-color: #FF4F4F;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: background-color 0.3s;
 }
 .btn-back:hover {
-  background-color: scale(#FF4F4F, 10%);
+  background-color: #051122;
 }
 
 .navbar {
@@ -97,6 +97,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  transition: all 0.3s ease-in-out;
 }
 .navbar .nav-links li a:hover {
   color: #FF4F4F;
@@ -140,6 +141,7 @@ footer {
   margin-top: 20px;
   font-size: 14px;
   color: #666;
+  padding-bottom: 20px;
 }
 
 #clock {
@@ -198,18 +200,20 @@ footer {
 .booking-form form input,
 .booking-form form select {
   padding: 10px;
+  border-radius: 4px;
   margin-bottom: 20px;
   font-size: 16px;
 }
 .booking-form form button {
-  padding: 10px;
+  padding: 15px;
   background-color: #FF4F4F;
   color: white;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .booking-form form button:hover {
-  background-color: #FF4F4F;
+  background-color: #051122;
 }
 
 #bookButton:disabled {
