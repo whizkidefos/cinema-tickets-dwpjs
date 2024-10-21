@@ -1,8 +1,7 @@
-# Cinema Booking
+# Cinema Ticket Booking WebApp
 
 > **Brief Project Description**  
 > A web application for purchasing cinema tickets with real-time ticket price calculation and mobile-friendly navigation. Users can select different ticket types (Adult, Child, Infant), and the system calculates the total while ensuring business rules are followed.
-> Example:
 
 ---
 
@@ -24,7 +23,7 @@
 - Mobile-friendly navigation with a toggle button.
 - Real-time ticket price calculation based on ticket type and quantity.
 - Error validation for ticket selection (e.g., no Child or Infant tickets without Adult tickets, max 25 tickets).
-- Uses JavaScript, Express, EJS, and Bootstrap for responsive UI.
+- Uses JavaScript, Express, EJS, and Sass for responsive UI.
 
 ---
 
@@ -116,7 +115,7 @@ Here’s a quick overview of the project's folder structure:
 
 ## Contributing
 
-Contributions are currently closed!:
+Contributions are currently closed!
 
 ---
 
