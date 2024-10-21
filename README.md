@@ -121,6 +121,6 @@ Contributions are currently closed!
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
 
 ---
