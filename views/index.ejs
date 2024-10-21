@@ -1,0 +1,33 @@
+<section class="homepage">
+    <h1 class="text-center">
+        <%= tagline %>
+    </h1>
+    <p class="text-center">Welcome to the easiest way to book your next cinema experience.</p>
+    <div class="booking-form">
+        <form id="ticketForm" action="/book" method="POST">
+            <label for="adultQuantity">Adult Tickets (£25 each):</label>
+            <input type="number" id="adultQuantity" name="adultQuantity" min="0"
+                value="<%= typeof adultQuantity !== 'undefined' ? adultQuantity : 0 %>" required>
+    
+            <label for="childQuantity">Child Tickets (£15 each):</label>
+            <input type="number" id="childQuantity" name="childQuantity" min="0"
+                value="<%= typeof childQuantity !== 'undefined' ? childQuantity : 0 %>" required>
+    
+            <label for="infantQuantity">Infant Tickets (£0 each):</label>
+            <input type="number" id="infantQuantity" name="infantQuantity" min="0"
+                value="<%= typeof infantQuantity !== 'undefined' ? infantQuantity : 0 %>" required>
+    
+            <p><strong>Total Price: £<span id="totalPrice">0</span></strong></p>
+    
+            <div id="alert-container">
+                <% if (message) { %>
+                    <div class="alert <%= messageClass %>">
+                        <%= message %>
+                    </div>
+                <% } %>
+            </div>
+    
+            <button type="submit" id="bookButton" disabled>Book Tickets</button>
+        </form>
+    </div>         
+</section>

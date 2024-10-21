@@ -1,0 +1,11 @@
+// Global styles
+@use 'global';
+
+// Other styles
+@use 'components/header';
+@use 'components/footer';
+@use 'components/shared';
+
+@use 'pages/home';
+@use 'pages/available-tickets';
+@use 'pages/order-history';

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>Cinema <span>Booking</span></h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/available-tickets">Available Tickets</a></li>
+                    <li><a href="/order-history">Order History</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <%- body %>
+    </main>
+
+    <footer class="text-center">
+        <p>&copy; <%= year %> Cinema Ticket Booking. All rights reserved.</p>
+        <small>Current date and time: <%= currentDate %> | <span id="clock"></span></small>
+    </footer>
+
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock
+        updateClock();
+    </script>
+    
+    <script type="module" src="/js/scripts.js"></script>
+</body>
+
+</html>

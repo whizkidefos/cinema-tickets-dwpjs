@@ -1,0 +1,31 @@
+// Order History
+.order-history-page {
+    padding: 3rem 0;
+}
+
+.order-history {
+    display: flex;
+    flex-direction: column;
+
+    .order-item {
+        background-color: #f7f7f7;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h3,
+        p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+    }
+}

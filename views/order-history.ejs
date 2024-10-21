@@ -1,0 +1,27 @@
+<section class="order-history-page">
+
+    <h1>Your Order History</h1>
+    
+    <% if (orderHistory.length> 0) { %>
+        <div class="order-history">
+            <% orderHistory.forEach(order=> { %>
+                <div class="order-item">
+                    <h3>Ticket Type: <%= order.ticketType %>
+                    </h3>
+                    <p>Quantity: <%= order.quantity %>
+                    </p>
+                    <p>Price Paid: £<%= order.price %>
+                    </p>
+                    <p>Date: <%= new Date(order.date).toDateString() %>
+                    </p>
+                    <p>Time: <%= new Date(order.date).toLocaleTimeString() %></p>
+                </div>
+            <% }) %>
+        </div>
+    <% } else { %>
+            <p>You have not made any orders yet.</p>
+    <% } %>
+
+    <a href="/" class="btn-back">Back to Booking</a>
+
+</section>

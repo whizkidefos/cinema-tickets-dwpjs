@@ -1,0 +1,21 @@
+<footer>
+    <p>&copy; <span id="current-year"></span> Cinema Ticket Booking. All rights reserved.</p>
+    <small>Current date and time: <span id="current-time"></span></small>
+</footer>
+
+<script>
+    // Display current year in the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Function to update the current time with seconds ticking
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        const dateString = now.toLocaleDateString();
+        document.getElementById('current-time').textContent = `${dateString}, ${timeString}`;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+    updateTime(); // Initial call to set the time immediately
+</script>

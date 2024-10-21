@@ -1,0 +1,46 @@
+$primary-color: #051122;
+$accent-color: #FF4F4F;
+
+.homepage {
+    padding: 3rem 0;
+}
+
+.booking-form {
+    margin: 20px auto;
+    width: 300px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: $accent-color;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $accent-color;
+            }
+        }
+    }
+}
+
+#bookButton:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
