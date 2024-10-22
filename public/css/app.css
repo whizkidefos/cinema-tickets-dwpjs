@@ -76,11 +76,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.navbar .nav-brand h1 {
+.navbar .nav-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar .nav-brand a h1 {
   margin: 0;
   font-size: 24px;
 }
-.navbar .nav-brand h1 span {
+.navbar .nav-brand a h1 span {
   color: #FF4F4F;
 }
 .navbar .nav-links {
